@@ -1,0 +1,16 @@
+# git pull --rebase 有冲突的话
+# git rebase branch名 合并之前
+[user]
+name = kk.shen
+email = kk.shen@saybot.com
+[color]
+diff = auto
+status = auto
+branch = auto
+[core]
+excludesfile = /home/kk.shen/.gitignor
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    pl = pull --rebase
+    l = log --stat
+    st = status

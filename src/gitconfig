@@ -14,3 +14,4 @@ excludesfile = /home/kk.shen/.gitignor
     pl = pull --rebase
     l = log --stat
     st = status
+    c = commit -v

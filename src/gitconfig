@@ -16,3 +16,5 @@ excludesfile = /home/kk.shen/.gitignor
     l = log --stat
     st = status
     c = commit -v
+[push]
+	default = simple

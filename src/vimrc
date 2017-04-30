@@ -156,11 +156,11 @@ map <silent> <leader>nt :NERDTreeFind<cr>
 " schemes http://code.google.com/p/vimcolorschemetest/
 
 " =========================================
-" https://github.com/gmarik/vundle
+" https://github.com/VundleVim/Vundle.vim
 " Bundles 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" Bundle 'gmarik/vundle'
 
 Bundle 'desert256.vim'
 Bundle 'scala.vim'

@@ -146,10 +146,6 @@ let g:neocomplcache_disable_auto_complete=1
 "let g:NeoComplCache_DisableAutoComplete=1
 
 
-"let g:NERDTreeWinPos = "right"
-"nmap <silent> <C-D> :NERDTreeToggle<CR>
-map <silent> <leader>r :NERDTreeToggle<cr>
-map <silent> <leader>nt :NERDTreeFind<cr>
 
 " http://insenvim.sourceforge.net/screen_shots.htm 代码提示
 "
@@ -161,6 +157,17 @@ map <silent> <leader>nt :NERDTreeFind<cr>
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Bundle 'gmarik/vundle'
+
+Plugin 'scrooloose/nerdtree'
+
+" autocmd VimEnter * NERDTree
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"let g:NERDTreeWinPos = "right"
+"nmap <silent> <C-D> :NERDTreeToggle<CR>
+map <silent> <leader>r :NERDTreeToggle<cr>
+map <silent> <leader>nt :NERDTreeFind<cr>
 
 Bundle 'desert256.vim'
 Bundle 'scala.vim'
@@ -198,6 +205,7 @@ Bundle "mattn/emmet-vim"
 Bundle 'digitaltoad/vim-jade'
 au bufnewfile,bufread *.jade set filetype=jade
 autocmd Filetype jade setlocal ts=2 sts=2 sw=2
+call vundle#end()
 
 
 "==================================================

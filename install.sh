@@ -1,26 +1,18 @@
 #!/bin/bash
 
-if [ -e ~/.tmux.conf ]
-then
-  echo "tmux config already exit"
-else
-  abspath=`realpath ./src/tmux.conf`
-  ln -s $abspath ~/.tmux.conf
-fi
+function link_config(){
+    config_file=`realpath ~`/.$1
+    if [ -e $config_file ]
+    then
+        echo "$config_file already exit"
+    else
+        abspath=`realpath ./src/$1`
+        ln -s $abspath $config_file
+    fi
+}
 
+link_config tmux.conf
+link_config gitconfig
+link_config gitignore
+link_config vimrc
 
-if [ -e ~/.gitconfig ]
-then
-  echo "git config already exit"
-else
-  abspath=`realpath ./src/gitconfig`
-  ln -s $abspath ~/.gitconfig
-fi
-
-if [ -e ~/.vimrc ]
-then
-  echo "vim config already exit"
-else
-  abspath=`realpath ./src/vimrc`
-  ln -s $abspath ~/.vimrc
-fi

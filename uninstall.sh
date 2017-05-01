@@ -12,8 +12,10 @@ function unlink_config(){
     fi
 }
 
-unlink_config tmux.conf
-unlink_config gitconfig
-unlink_config gitignore
-unlink_config vimrc
+for file in ./src/*
+do
+    basefile=`basename "$file"`
+    echo $basefile
+    unlink_config $basefile
+done
 

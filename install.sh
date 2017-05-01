@@ -11,8 +11,9 @@ function link_config(){
     fi
 }
 
-link_config tmux.conf
-link_config gitconfig
-link_config gitignore
-link_config vimrc
-
+for file in ./src/*
+do
+    basefile=`basename "$file"`
+    echo $basefile
+    link_config $basefile
+done

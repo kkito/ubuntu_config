@@ -8,7 +8,7 @@ diff = auto
 status = auto
 branch = auto
 [core]
-excludesfile = /home/kk.shen/.gitignor
+	excludesfile = ~/.gitignore
 	editor = vim
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --

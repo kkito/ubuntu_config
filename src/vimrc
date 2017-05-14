@@ -205,6 +205,13 @@ Bundle "mattn/emmet-vim"
 Bundle 'digitaltoad/vim-jade'
 au bufnewfile,bufread *.jade set filetype=jade
 autocmd Filetype jade setlocal ts=2 sts=2 sw=2
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+set t_Co=256
+Plugin 'tpope/vim-fugitive'
+Plugin 'edkolev/tmuxline.vim'
+
 call vundle#end()
 
 
